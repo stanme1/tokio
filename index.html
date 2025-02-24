@@ -310,27 +310,21 @@
       </div>
     </div>
 
-    <audio id="background-music" loop autoplay>
+    <audio id="background-music" loop>
         <source src="background-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
+    <button id="play-button" class="music-button">Play Music</button>
+
     <script src="valentine-flower.js"></script>
     <script>
         const music = document.getElementById('background-music');
-        const pauseButton = document.getElementById('pause-button');
         const playButton = document.getElementById('play-button');
-
-        pauseButton.addEventListener('click', () => {
-            music.pause();
-            pauseButton.style.display = 'none';
-            playButton.style.display = 'inline';
-        });
 
         playButton.addEventListener('click', () => {
             music.play();
-            playButton.style.display = 'none';
-            pauseButton.style.display = 'inline';
+            playButton.style.display = 'none'; // Hide the button after playing
         });
     </script>
   </body>
