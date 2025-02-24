@@ -1035,40 +1035,36 @@ body {
     bottom: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    gap: 10px; /* Space between buttons */
     z-index: 100; /* Ensure it appears above other content */
 }
 
 .music-button {
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Small size */
+    height: 40px; /* Small size */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-family: 'Quicksand', sans-serif; /* Use a font from your existing styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 .music-button:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .music-button:active {
     transform: translateY(1px);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Add a gradient background for a more aesthetic look */
 .music-button {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: white; /* Change text color for better contrast */
-}
-
-.music-button:hover {
-    background: linear-gradient(135deg, #feb47b, #ff7e5f);
 }
