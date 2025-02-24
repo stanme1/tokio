@@ -1047,15 +1047,28 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif; /* Use a font from your existing styles */
 }
 
 .music-button:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .music-button:active {
     transform: translateY(1px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a gradient background for a more aesthetic look */
+.music-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white; /* Change text color for better contrast */
+}
+
+.music-button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
 }
